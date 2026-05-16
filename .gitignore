@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+nids_env/
+venv/
+.env/
+
+# Trained models (too large for GitHub)
+models/trained/
+*.joblib
+*.pkl
+*.pt
+*.pth
+
+# Datasets (download separately)
+data/datasets/
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Output reports (regenerate locally)
+output/reports/*.png
