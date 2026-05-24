@@ -31,4 +31,4 @@ python3 main.py train --dataset nslkdd --data-path data/datasets/NSL-KDD
 
 ## Author
 
-Filaj Theodora  — BSc Computing, University of Bolton (2026)
+Filaj Theodora  — BSc Computing, University of Greater Manchester (2026)
