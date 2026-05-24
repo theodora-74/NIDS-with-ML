@@ -1,0 +1,37 @@
+# ===========================================
+# ADAPTIVE ML-NIDS DEPENDENCIES (FIXED)
+# ===========================================
+
+# Core Scientific Computing (no version pinning)
+numpy
+pandas
+scipy
+
+# Machine Learning - Ensemble
+scikit-learn
+xgboost
+lightgbm
+
+# Deep Learning - Autoencoders
+tensorflow
+
+# Network Packet Capture
+scapy
+
+# Data Processing
+pyarrow
+joblib
+h5py
+
+# Visualization
+matplotlib
+seaborn
+
+# Utilities
+tqdm
+pyyaml
+colorlog
+python-dateutil
+
+# Imbalanced Data
+imbalanced-learn

@@ -1,0 +1,56 @@
+ML-NIDS PERFORMANCE REPORT
+============================================================
+
+Dataset: NSL-KDD
+Test samples: 22544
+
+CLASSIFICATION REPORT:
+                 precision    recall  f1-score   support
+
+        apache2       0.00      0.00      0.00       737
+           back       0.74      0.99      0.85       359
+buffer_overflow       0.00      0.00      0.00        20
+      ftp_write       0.00      0.00      0.00         3
+   guess_passwd       0.00      0.00      0.00      1231
+     httptunnel       0.00      0.00      0.00       133
+           imap       0.00      0.00      0.00         1
+        ipsweep       0.59      0.99      0.74       141
+           land       0.00      0.00      0.00         7
+     loadmodule       0.00      0.00      0.00         2
+       mailbomb       0.00      0.00      0.00       293
+          mscan       0.00      0.00      0.00       996
+       multihop       0.00      0.00      0.00        18
+          named       0.00      0.00      0.00        17
+        neptune       0.97      1.00      0.98      4657
+           nmap       1.00      0.99      0.99        73
+         normal       0.64      0.98      0.77      9711
+           perl       0.00      0.00      0.00         2
+            phf       0.00      0.00      0.00         2
+            pod       0.71      0.88      0.78        41
+      portsweep       0.80      0.92      0.86       157
+   processtable       0.00      0.00      0.00       685
+             ps       0.00      0.00      0.00        15
+        rootkit       0.00      0.00      0.00        13
+          saint       0.00      0.00      0.00       319
+          satan       0.65      1.00      0.79       735
+       sendmail       0.00      0.00      0.00        14
+          smurf       1.00      0.99      1.00       665
+  snmpgetattack       0.00      0.00      0.00       178
+      snmpguess       0.00      0.00      0.00       331
+      sqlattack       0.00      0.00      0.00         2
+       teardrop       0.24      1.00      0.39        12
+       udpstorm       0.00      0.00      0.00         2
+    warezmaster       0.50      0.00      0.00       944
+           worm       0.00      0.00      0.00         2
+          xlock       0.00      0.00      0.00         9
+         xsnoop       0.00      0.00      0.00         4
+          xterm       0.00      0.00      0.00        13
+
+       accuracy                           0.72     22544
+      macro avg       0.21      0.26      0.21     22544
+   weighted avg       0.57      0.72      0.62     22544
+
+
+MODEL ARCHITECTURE:
+- Ensemble: XGBoost (30%), LightGBM (30%), Random Forest (25%), Gradient Boosting (15%)
+- Anomaly Detection: Isolation Forest, One-Class SVM, Autoencoder (PyTorch)
